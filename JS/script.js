@@ -4,8 +4,13 @@ $(".submit").click(() => {
   $.ajax({
     url:`https://api.giphy.com/v1/gifs/search?api_key=${key}&q=${userInput}=&limit=25&offset=0&rating=g&lang=en`,
   }).done((res) => {
-      
-    console.log("res",res)
+      let gifs = res.data;
+    //   debugger
+      $.each(gifs, (e) => {
+          let gifs = res.data.url
+          $("body").append(gifs)
+
+      })
   });
 
 });
