@@ -1,1 +1,3 @@
-console.log("hello")
+$(".submit").click(() => {
+  console.log("clicked!");
+});
