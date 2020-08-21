@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="../JS/script.js" async></script>
     <script src="../Resources/jqueryCDN.js"></script>
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style.css" />
     <title>Gyphy Search Engine</title>
   </head>
   <body>
@@ -13,15 +13,22 @@
       Giphy Search
     </div>
     <nav class="inputs">
-      <form>
-        <input type="text" label="search" class="search">Search
-        <input type="text" label="limit" class="limit">amount
-      </form>
+      <input
+        type="text"
+        label="search"
+        class="search"
+        placeholder="Gif search"
+        required="required"
+      />
+      <input
+        type="text"
+        label="limit"
+        class="limit"
+        placeholder="# of Gifs"
+        required="required"
+      />
       <button type="submit" class="submit">submit</button>
-      
     </nav>
-    <div class="container">
-
-    </div>
+    <div class="container grid-container"></div>
   </body>
 </html>
