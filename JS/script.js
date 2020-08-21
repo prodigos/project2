@@ -1,16 +1,15 @@
-let key = "gzd5QMerlYZRm97VihohsmpTccaZR2XO"
+let key = "gzd5QMerlYZRm97VihohsmpTccaZR2XO";
 $(".submit").click(() => {
   let userInput = $(".search").val();
   $.ajax({
-    url:`https://api.giphy.com/v1/gifs/search?api_key=${key}&q=${userInput}=&limit=25&offset=0&rating=g&lang=en`,
+    url: `https://api.giphy.com/v1/gifs/search?api_key=${key}&q=${userInput}=&limit=25&offset=0&rating=g&lang=en`,
   }).done((res) => {
-      let gifs = res.data;
-    //   debugger
-      $.each(gifs, (e) => {
-          let gifs = res.data.url
-          $("body").append(gifs)
-
-      })
+    let gifsArray = res.data;
+    debugger;
+    $.each(gifsArray, (i, e) => {
+      let postGifs = e.url;
+      $(".container").append(postGifs);
+      console.log(postGifs);
+    });
   });
-
 });
