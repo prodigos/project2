@@ -3,22 +3,43 @@ nav {
     display: flex;
     justify-content: space-around;
     padding: 15px;
+    font-family: 'Bungee Shade', cursive;
+    margin-right: auto;
     
    
 }
 
-.header {
-    font-family: 'Bungee Shade', cursive;
+.inputs {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+   background-color: chocolate;
 }
 
-/* .container {
+/* .grid-row {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    justify-content: flex-start;
 } */
-.grid-container{ 
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+#images {
+    /* flex: 3; */
+    width: 33%;
+}
+
+@media (max-width: 400px) {
+    .flex-grid {
+      display: block;
+    }
+  }
+/* .grid-container{ 
     display: grid;
     grid-template-columns: auto auto auto;
     background-color: cadetblue;
     padding: 10px;
-}
+} */

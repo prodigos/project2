@@ -9,7 +9,7 @@ $(".submit").click(() => {
     let gifsArray = res.data;
     $.each(gifsArray, (i, e) => {
         let postGifs = e.images.downsized.url;
-        $(".container").append(`<img src="${postGifs}"/>`);
+        $(".container").append(`<img src="${postGifs}" id="images"/>`);
     });
   });
 });
