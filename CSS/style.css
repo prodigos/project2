@@ -7,11 +7,15 @@ nav {
    
 }
 
-.container {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
+.header {
+    font-family: 'Bungee Shade', cursive;
 }
+
+/* .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
 .grid-container{ 
     display: grid;
     grid-template-columns: auto auto auto;
