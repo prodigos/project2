@@ -13,7 +13,7 @@ nav {
     display: flex;
     justify-content: center;
     padding: 20px;
-   background-color: chocolate;
+    background-color: chocolate;
 }
 
 /* .grid-row {
@@ -24,22 +24,35 @@ nav {
 .container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
 }
 
-#images {
-    /* flex: 3; */
-    width: 33%;
+.container > img {
+    width: 20%;
+    margin: 2% 2.5%;
+    border-radius: 3px;
+
+    transition: all 0.5 ease-in-out;
 }
+
+.container > img:hover {
+    transform: scale(1.1);
+}
+
+
+/* #images {
+    flex: 3; 
+    width: 33%;
+} */
 
 @media (max-width: 400px) {
     .flex-grid {
       display: block;
     }
   }
-/* .grid-container{ 
+.grid-container{ 
     display: grid;
     grid-template-columns: auto auto auto;
     background-color: cadetblue;
     padding: 10px;
-} */
+} 
