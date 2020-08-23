@@ -2,3 +2,4 @@
 this is my second project. App with search engine.
 tecnologies used: htm , jquery, css.
 created an account in giphy to be able to use the api. the main challenge was to get the json from giphy.
+Another challenge was making the app responsive using media queries.
