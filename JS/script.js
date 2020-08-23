@@ -6,11 +6,11 @@ $(".submit").click(() => {
   $.ajax({
     url: `https://api.giphy.com/v1/gifs/search?api_key=${key}&q=${userInput}=&limit=${userLimit}&offset=0&rating=g&lang=en`,
   }).done((res) => {
-    $(".container").empty()
+    $(".container").empty();
     let gifsArray = res.data;
     $.each(gifsArray, (i, e) => {
-        let postGifs = e.images.downsized.url;
-        $(".container").append(`<img src="${postGifs}"/>`);
+      let postGifs = e.images.downsized.url;
+      $(".container").append(`<img src="${postGifs}"/>`);
     });
   });
 });
